@@ -45,23 +45,54 @@
 
 // challenge 5
 
-const calcAverage = (score1, score2, score3) => (score1+score2+score3)/3
-// console.log(calcAverage(44,23,71))
+// const calcAverage = (score1, score2, score3) => (score1+score2+score3)/3
+// // console.log(calcAverage(44,23,71))
 
-// const dolphinAverage = calcAverage(44, 23,71)
-// console.log(dolphinAverage)
-const dolphinAverage = calcAverage(85, 54, 41);
+// // const dolphinAverage = calcAverage(44, 23,71)
+// // console.log(dolphinAverage)
+// const dolphinAverage = calcAverage(85, 54, 41);
 
-// const KoalasAverage = calcAverage(65, 54, 49);
-const KoalasAverage = calcAverage(23, 34, 2);
+// // const KoalasAverage = calcAverage(65, 54, 49);
+// const KoalasAverage = calcAverage(23, 34, 2);
 
-// console.log(KoalasAverage);
+// // console.log(KoalasAverage);
 
-const checkWinner = (dolphinAverage, KoalasAverage)=>{
-	if(dolphinAverage>KoalasAverage){
-		return `Dolphins are the winners with ${dolphinAverage} vs ${KoalasAverage}`
-}else{
-	return `Koalas are the winners with ${KoalasAverage} vs ${dolphinAverage}`
-}
-}
-console.log(checkWinner(dolphinAverage, KoalasAverage));
+// const checkWinner = (dolphinAverage, KoalasAverage)=>{
+// 	if(dolphinAverage>KoalasAverage){
+// 		return `Dolphins are the winners with ${dolphinAverage} vs ${KoalasAverage}`
+// }else{
+// 	return `Koalas are the winners with ${KoalasAverage} vs ${dolphinAverage}`
+// }
+// }
+// console.log(checkWinner(dolphinAverage, KoalasAverage));
+////////////////////////////////
+
+// challenge 6
+// let bill = 125
+// let tip;
+// if (bill >= 50 && bill<=300){
+// 	tip=0.15*bill
+// }else{
+// 	tip=0.2*bill
+// }
+// // console.log(`tip is ${tip}`)
+// let tip;
+// const calcTip = bill => {
+// 	 if(bill>=50 && bill <=300){
+// 		 tip=0.15*bill
+// 		 return tip
+// 	 } else return tip=0.2*bill
+// }
+// console.log(calcTip(125))
+// console.log(calcTip(330))
+
+// const bills = [125, 555, 44]
+// const tips = [calcTip(125), calcTip(555), calcTip(44)]
+// console.log(tips)
+
+// const total = [
+// 	`${bills[0] + tips[0]}, ${bills[1] + tips[1]}, ${
+// 		bills[2] + tips[2]
+// 	}}`,
+// ];
+// console.log(total)
