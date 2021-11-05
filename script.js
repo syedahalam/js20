@@ -1,20 +1,67 @@
-let mmasss = 78;
-let mheight = 1.69;
+// challenge 2
+// let mmasss = 78;
+// let mheight = 1.69;
 
-let jmasss =92;
-let jheight = 1.95;
+// let jmasss =92;
+// let jheight = 1.95;
 
-let mbmi = (mmasss/mheight ** 2)
-console.log(mbmi)
+// let mbmi = (mmasss/mheight ** 2)
+// console.log(mbmi)
 
-let jbmi = jmasss / jheight ** 2;
-console.log(jbmi);
+// let jbmi = jmasss / jheight ** 2;
+// console.log(jbmi);
 
-let ismarkmbihigher = mbmi >jbmi
-console.log(ismarkmbihigher)
+// let ismarkmbihigher = mbmi >jbmi
+// console.log(ismarkmbihigher)
 
-if(mbmi>jbmi){
-	console.log(`Mark's BMI (${mbmi}) is higher than John's (${jbmi}).`)
+// if(mbmi>jbmi){
+// 	console.log(`Mark's BMI (${mbmi}) is higher than John's (${jbmi}).`)
+// }else{
+// 	console.log(`John's BMI is higher than MAr's`)
+// }
+/////////////////////////
+
+// // challenge 3
+// let dolAverage = (96+108+89)/3
+// console.log(dolAverage)
+
+// let kosAverage = (88+91+110)/3
+// console.log(kosAverage)
+
+// if(dolAverage>kosAverage){
+// 	console.log(`Winner is Dolphins`)
+// }else{
+// 	console.log('Winner is Koalas')
+// }
+
+////////////////
+
+// challenge 4
+
+// let bill = 275
+// let tip = 0.15*bill
+// let total=bill+tip
+// console.log(`The bill was${bill}, the tip was ${tip}total)
+
+// challenge 5
+
+const calcAverage = (score1, score2, score3) => (score1+score2+score3)/3
+// console.log(calcAverage(44,23,71))
+
+// const dolphinAverage = calcAverage(44, 23,71)
+// console.log(dolphinAverage)
+const dolphinAverage = calcAverage(85, 54, 41);
+
+// const KoalasAverage = calcAverage(65, 54, 49);
+const KoalasAverage = calcAverage(23, 34, 2);
+
+// console.log(KoalasAverage);
+
+const checkWinner = (dolphinAverage, KoalasAverage)=>{
+	if(dolphinAverage>KoalasAverage){
+		return `Dolphins are the winners with ${dolphinAverage} vs ${KoalasAverage}`
 }else{
-	console.log(`John's BMI is higher than MAr's`)
+	return `Koalas are the winners with ${KoalasAverage} vs ${dolphinAverage}`
 }
+}
+console.log(checkWinner(dolphinAverage, KoalasAverage));
