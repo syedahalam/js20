@@ -96,3 +96,15 @@
 // 	}}`,
 // ];
 // console.log(total)
+///////////////////
+
+// challenge objects
+
+const jonas = {
+	firstName: 'Jonas',
+	lastName: 'Schemt',
+	age: 2037-1991,
+	job:'teacher',
+	friend:['Mike', 'bill', 'doug']
+}
+console.log(`${jonas.firstName} has ${(jonas.friend.length)} friends and ${(jonas.friend[0])} is his best friend.`)
