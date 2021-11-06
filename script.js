@@ -100,11 +100,40 @@
 
 // challenge objects
 
-const jonas = {
-	firstName: 'Jonas',
-	lastName: 'Schemt',
-	age: 2037-1991,
-	job:'teacher',
-	friend:['Mike', 'bill', 'doug']
-}
-console.log(`${jonas.firstName} has ${(jonas.friend.length)} friends and ${(jonas.friend[0])} is his best friend.`)
+// const jonas = {
+// 	firstName: 'Jonas',
+// 	lastName: 'Schemt',
+// 	age: 2037-1991,
+// 	job:'teacher',
+// 	friend:['Mike', 'bill', 'doug']
+// }
+// // console.log(`${jonas.firstName} has ${(jonas.friend.length)} friends and ${(jonas.friend[0])} is his best friend.`)
+
+// //challennge
+
+// console.log(`${jonas.firstName} is a ${jonas.age}-years old teacher, aad he has `)
+
+// challennge objects
+
+// const mark = {
+// 	fullname: 'Mark Miller',
+// 	mass:78,
+// 	height:1.69,
+
+// 	calcBMI: function(){
+// 		return this.bmi=(this.mass)/(this.height)**2
+// 	}
+// }
+// console.log(mark.calcBMI())
+
+// const john = {
+// 	fullname: 'John Smith',
+// 	mass: 92,
+// 	height: 1.95,
+
+// 	calcBMI: function () {
+// 		return (this.bmi = this.mass / this.height ** 2);
+// 	},
+// };
+// console.log(john.calcBMI());
+// console.log(`${john.fullname}'s BMI (${john.calcBMI()}) is higher than ${mark.fullname}'s BMI ${mark.calcBMI()}!'`)
