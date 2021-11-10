@@ -137,3 +137,30 @@
 // };
 // console.log(john.calcBMI());
 // console.log(`${john.fullname}'s BMI (${john.calcBMI()}) is higher than ${mark.fullname}'s BMI ${mark.calcBMI()}!'`)
+
+// const printForecast = (arr) => {
+// 	//take array elements n print as string
+// // 	const str=arr.toString()
+// //  console.log(`...${str}C`)
+// console.log('data')
+// }
+// printForecast([21,32,43])
+// const maxNum = (arr)=>{
+// 	const max=Math.max(...arr)
+// 	// console.log(max)
+// 	return max
+// }
+// const minNum = (arr) => {
+// 	const min = Math.min(...arr);
+// 	// console.log(min);
+// 	return min
+// };
+// console.log(`...${maxNum([1,2,3])} is the max, ${minNum([1,2,3])} is the min`)
+
+//oop
+const Person = function(firstame, birthYear){
+	this.firstame = firstame
+	this.birthYear = birthYear
+}
+const Syeda = new Person('Syeda', 1980)
+console.log(Syeda)
