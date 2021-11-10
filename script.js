@@ -158,9 +158,47 @@
 // console.log(`...${maxNum([1,2,3])} is the max, ${minNum([1,2,3])} is the min`)
 
 //oop
-const Person = function(firstame, birthYear){
-	this.firstame = firstame
-	this.birthYear = birthYear
+// const Person = function(firstame, birthYear){
+// 	this.firstame = firstame
+// 	this.birthYear = birthYear
+// }
+// const Syeda = new Person('Syeda', 1980)
+// console.log(Syeda)
+
+// // prototypes
+// Person.prototype.calcAge = function(){
+// 	console.log(2037-this.birthYear)
+// }
+// Syeda.calcAge()
+// console.log(Syeda.__proto__.__proto__.__proto__)
+
+const Car = function(make, speed){
+	this.make = make
+	this.speed = speed
 }
-const Syeda = new Person('Syeda', 1980)
-console.log(Syeda)
+const BMW = new Car('BMW', 110)
+const Mercedes = new Car('Mercedes', 85);
+console.log(BMW)
+console.log(Mercedes);
+Car.prototype.accelerate = function(){
+	console.log(this.speed+=10)
+}
+// console.log(BMW.accelerate())
+// console.log(Mercedes.accelerate())
+BMW.accelerate()
+BMW.accelerate()
+BMW.accelerate()
+Mercedes.accelerate()
+Mercedes.accelerate()
+Mercedes.accelerate()
+
+Car.prototype.brake = function () {
+	console.log((this.speed -= 5));
+};
+
+BMW.brake();
+BMW.brake();
+BMW.brake();
+Mercedes.brake();
+Mercedes.brake();
+Mercedes.brake();
