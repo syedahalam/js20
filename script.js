@@ -217,18 +217,31 @@
 // };
 
 // console.log(ourStorage.cabinet['top drawer'].folder2);
-// console.log(ourStorage.desk.drawer);
-const myStorage = {
-	car: {
-		inside: {
-			'glove box': 'maps',
-			'passenger seat': 'crumbs',
-		},
-		outside: {
-			trunk: 'jack',
-		},
-	},
-};
+// // console.log(ourStorage.desk.drawer);
+// const myStorage = {
+// 	car: {
+// 		inside: {
+// 			'glove box': 'maps',
+// 			'passenger seat': 'crumbs',
+// 		},
+// 		outside: {
+// 			trunk: 'jack',
+// 		},
+// 	},
+// };
 
-const gloveBoxContents = myStorage.car['inside']["glove box"];
-console.log(gloveBoxContents)
+// const gloveBoxContents = myStorage.car['inside']["glove box"];
+// console.log(gloveBoxContents)
+const myPlants = [
+	{
+		type: 'flowers',
+		list: ['rose', 'tulip', 'dandelion'],
+	},
+	{
+		type: 'trees',
+		list: ['fir', 'pine', 'birch'],
+	},
+];
+
+const secondTree = myPlants[1].list[1];
+console.log(secondTree);
