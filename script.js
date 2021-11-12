@@ -172,33 +172,63 @@
 // Syeda.calcAge()
 // console.log(Syeda.__proto__.__proto__.__proto__)
 
-const Car = function(make, speed){
-	this.make = make
-	this.speed = speed
-}
-const BMW = new Car('BMW', 110)
-const Mercedes = new Car('Mercedes', 85);
-console.log(BMW)
-console.log(Mercedes);
-Car.prototype.accelerate = function(){
-	console.log(this.speed+=10)
-}
-// console.log(BMW.accelerate())
-// console.log(Mercedes.accelerate())
-BMW.accelerate()
-BMW.accelerate()
-BMW.accelerate()
-Mercedes.accelerate()
-Mercedes.accelerate()
-Mercedes.accelerate()
+// const Car = function(make, speed){
+// 	this.make = make
+// 	this.speed = speed
+// }
+// const BMW = new Car('BMW', 110)
+// const Mercedes = new Car('Mercedes', 85);
+// console.log(BMW)
+// console.log(Mercedes);
+// Car.prototype.accelerate = function(){
+// 	console.log(this.speed+=10)
+// }
+// // console.log(BMW.accelerate())
+// // console.log(Mercedes.accelerate())
+// BMW.accelerate()
+// BMW.accelerate()
+// BMW.accelerate()
+// Mercedes.accelerate()
+// Mercedes.accelerate()
+// Mercedes.accelerate()
 
-Car.prototype.brake = function () {
-	console.log((this.speed -= 5));
+// Car.prototype.brake = function () {
+// 	console.log((this.speed -= 5));
+// };
+
+// BMW.brake();
+// BMW.brake();
+// BMW.brake();
+// Mercedes.brake();
+// Mercedes.brake();
+// Mercedes.brake();
+/////////////////////////
+// const ourStorage = {
+// 	desk: {
+// 		drawer: 'stapler',
+// 	},
+// 	cabinet: {
+// 		'top drawer': {
+// 			folder1: 'a file',
+// 			folder2: 'secrets',
+// 		},
+// 		'bottom drawer': 'soda',
+// 	},
+// };
+
+// console.log(ourStorage.cabinet['top drawer'].folder2);
+// console.log(ourStorage.desk.drawer);
+const myStorage = {
+	car: {
+		inside: {
+			'glove box': 'maps',
+			'passenger seat': 'crumbs',
+		},
+		outside: {
+			trunk: 'jack',
+		},
+	},
 };
 
-BMW.brake();
-BMW.brake();
-BMW.brake();
-Mercedes.brake();
-Mercedes.brake();
-Mercedes.brake();
+const gloveBoxContents = myStorage.car['inside']["glove box"];
+console.log(gloveBoxContents)
