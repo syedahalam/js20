@@ -232,16 +232,55 @@
 
 // const gloveBoxContents = myStorage.car['inside']["glove box"];
 // console.log(gloveBoxContents)
-const myPlants = [
-	{
-		type: 'flowers',
-		list: ['rose', 'tulip', 'dandelion'],
-	},
-	{
-		type: 'trees',
-		list: ['fir', 'pine', 'birch'],
-	},
-];
+// const myPlants = [
+// 	{
+// 		type: 'flowers',
+// 		list: ['rose', 'tulip', 'dandelion'],
+// 	},
+// 	{
+// 		type: 'trees',
+// 		list: ['fir', 'pine', 'birch'],
+// 	},
+// ];
 
-const secondTree = myPlants[1].list[1];
-console.log(secondTree);
+// const secondTree = myPlants[1].list[1];
+// console.log(secondTree);
+// Setup
+const recordCollection = {
+  2548: {
+    albumTitle: 'Slippery When Wet',
+    artist: 'Bon Jovi',
+    tracks: ['Let It Rock', 'You Give Love a Bad Name']
+  },
+  2468: {
+    albumTitle: '1999',
+    artist: 'Prince',
+    tracks: ['1999', 'Little Red Corvette']
+  },
+  1245: {
+    artist: 'Robert Palmer',
+    tracks: []
+  },
+  5439: {
+    albumTitle: 'ABBA Gold'
+  }
+};
+
+// Only change code below this line
+function updateRecords(records, id, prop, value) {
+  return records;
+}
+
+// console.log(updateRecords(recordCollection, 5439, 'artist', 'ABBA'));
+
+//11-14-21
+const measureKelvin = () =>{
+  const measurement = {
+    type: 'temp',
+    unit: 'celcius',
+    value: Number(prompt('Degrees celcius'))
+  }
+  const kelvin = measurement.value+273
+  return kelvin
+}
+console.log(measureKelvin())
